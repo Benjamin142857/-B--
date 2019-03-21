@@ -1,0 +1,136 @@
+
+
+
+PSeqList createNullList_seq(int m ) {
+	/* 创建新的顺序表 */
+    PSeqList palist = (PSeqList)malloc(sizeof(struct SeqList));
+    if (palist!=NULL)
+	{
+		palist->element = (DataType*)malloc(sizeof(DataType)*m);
+		if (palist->element)
+		{
+			palist->MAXNUM=m;
+			palist ->n = 0;			/* 空表长度为0 */
+			return  palist ;
+		}
+		else free(palist);
+    }
+    printf("Out of space!!\n");    	/* 存储分配失败 */
+    return NULL;
+}
+
+int  isNullList_seq( PSeqList palist ) {
+	/*判别palist所指顺序表是否为空表。*/
+    return ( palist->n == 0 );
+}
+
+int  locate_seq( PSeqList palist, DataType x ) {
+	/* 求x在palist所指顺序表中的下标 */
+	int  q;
+	for ( q=0; q<palist->n ; q++) 
+		if ( palist->element[q] == x)  return  q ;
+	return   -1;
+}
+
+int insertPre_seq( PSeqList palist, int p, DataType x ) {
+	/* 在palist所指顺序表中下标为p的元素之前插入元素x */
+	int q;
+	if ( palist->n >= palist-> MAXNUM ) {			/* 溢出 */
+		printf("Overflow!\n");
+		return   0  ;
+	}
+	if (p<0  ||  p>palist->n  ) {  	/* 不存在下标为p的元素 */
+		printf("Not exist! \n");  
+		return  0  ;
+	}
+	for(q=palist->n - 1; q>=p; q--)  /* 插入位置及之后的元素均后移一个位置 */
+		palist->element[q+1] = palist->element[q];
+	palist->element[p] = x;			/* 插入元素x */
+	palist->n = palist->n + 1;			/* 元素个数加1 */
+	return   1  ;
+}
+
+int  deleteP_seq( PSeqList palist, int p ) {
+	/* 在palist所指顺序表中删除下标为ｐ的元素 */
+	int q;
+	if (p<0 || p>palist->n - 1 ) {/* 不存在下标为p的元素 */
+		printf("Not exist!\n ");
+		return   0 ;
+	}
+	for(q=p; q<palist->n-1; q++) 	/* 被删除元素之后的元素均前移一个位置 */
+		palist->element[q] = palist->element[q+1];
+	palist->n = palist->n - 1;			/* 元素个数减1 */
+	return   1  ;
+}
+
+
+
+/*创建一个带头结点的空单链表*/
+LinkList  createNullList_link(void) {
+	LinkList llist;
+	/*申请表头结点空间*/
+	llist=(LinkList)malloc(sizeof(struct Node ));
+	if (llist!=NULL) 
+		llist->link=NULL;
+	else 
+		printf("Out of space!\n"); /*创建失败*/
+	return llist;
+ }
+
+
+int isNullList_link(LinkList llist) {
+	return (llist->link==NULL);
+}
+
+
+/*在带头结点的单链表llist中找第一个值为x的结点存储位置*/
+PNode locate_link(LinkList llist, DataType x) {
+	PNode p;
+	if(llist==NULL) return NULL; /*找不到时返回空指针*/
+	p = llist->link;
+	while (p!=NULL&&p->info!=x)
+		p=p->link;
+	return p;
+}
+
+int insertPost_link(LinkList llist, PNode p, DataType x) {
+	PNode q=(PNode)malloc(sizeof(struct Node));     /*申请新结点*/
+	if (q==NULL) {
+		printf("Out of Space!\n") ;
+		return 0;
+	}
+	else {
+		q->info =x;
+		q->link=p->link;
+		p->link=q;
+		return 1;
+	} 
+}        
+
+
+PNode locatePre_link(LinkList llist, PNode p)
+{
+	PNode p1;
+	if(llist == NULL) return NULL;
+	p1 = llist;
+	while(p1 != NULL  && p1->link != p) p1=p1->link;
+	return p1;
+}
+
+
+
+int deleteV_link(LinkList llist, DataType x) {
+	PNode p, q;    p = llist;
+	if(p==NULL) return 0 ;
+	while( p->link != NULL && p->link->info != x )
+		p = p->link; 	/*找值为x的结点的前驱结点的存储位置 */
+	if( p->link == NULL ) {  	/* 没找到值为x的结点 */
+		printf("Not exist!\n");  
+		return 0 ;
+	}
+	else {
+		q = p->link;	  	/* 找到值为x的结点 */
+		p->link = q->link;   	/* 删除该结点 */
+		free( q );  return 1 ; 
+	}
+}

@@ -1,0 +1,36 @@
+
+typedef int DataType;
+
+
+struct SeqList{
+    int   MAXNUM;       /*顺序表中可以存放元素的个数*/
+    int        n;        /* 实际存放线性表中元素的个数，n≤MAXNUM  */ 
+    DataType *element;   /* element[0],element[1]，…，element[n- 1]存放线性表中的元素 */
+};
+typedef  struct SeqList * PSeqList; 
+
+
+
+
+struct Node;                      /*单链表结点类型*/
+typedef struct Node * PNode;      /*结点指针类型*/
+struct Node {                     /*单链表结点结构*/
+	DataType info;
+	PNode link;
+};
+typedef struct Node * LinkList ;   /*单链表类型*/
+
+
+PSeqList createNullList_seq(int );
+int  isNullList_seq( PSeqList  );
+int  locate_seq( PSeqList , DataType  ) ;
+int insertPre_seq( PSeqList , int , DataType  );
+int  deleteP_seq( PSeqList , int  );
+LinkList  createNullList_link(void);
+int isNullList_link(LinkList ) ;
+PNode locate_link(LinkList , DataType );
+int insertPost_link(LinkList , PNode , DataType ) ;
+PNode locatePre_link(LinkList , PNode );
+int deleteV_link(LinkList , DataType ) ;
+
+
