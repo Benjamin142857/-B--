@@ -6,7 +6,13 @@
 
 #IncludeRegexTransform: 
 
+E:/#Programming/C&C++/Grade2B-ALDS-Test/L3/SeqQueue.h
+malloc.h
+E:/#Programming/C&C++/Grade2B-ALDS-Test/L3/malloc.h
+
 E:/#Programming/C&C++/Grade2B-ALDS-Test/L3/main.c
 stdio.h
 -
+SeqQueue.h
+E:/#Programming/C&C++/Grade2B-ALDS-Test/L3/SeqQueue.h
 

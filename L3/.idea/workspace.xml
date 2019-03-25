@@ -11,16 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfaad560-41ee-4b6c-9b42-cabcd581c9f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../L1/.idea/L1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../L1/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../L1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../L1/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../L1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../L1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../L1/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../L1/main.c" afterDir="false" />
-    </list>
+    <list default="true" id="cfaad560-41ee-4b6c-9b42-cabcd581c9f3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,34 +22,38 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/#Require/chapter4.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="950">
+              <caret line="80" column="52" lean-forward="true" selection-start-line="80" selection-start-column="52" selection-end-line="80" selection-end-column="52" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#63#557#0" />
+                <element signature="e#43#137#0" />
+                <element signature="e#198#352#0" />
+                <element signature="e#350#500#0" />
+                <element signature="e#501#650#0" />
+                <element signature="e#652#801#0" />
+                <element signature="e#813#868#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/#Require/chapter4.h">
+        <entry file="file://$PROJECT_DIR$/SeqQueue.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="297">
+              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="17" />
+              <folding>
+                <element signature="e#541#1336#0" />
+                <element signature="e#1338#1432#0" />
+                <element signature="e#1434#1546#0" />
+                <element signature="e#1548#1865#0" />
+                <element signature="e#1867#2125#0" />
+                <element signature="e#2128#2386#0" />
+                <element signature="e#2388#2622#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,11 +67,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/#Require/chapter4.c" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="186" />
+    <option name="x" value="185" />
     <option name="y" value="185" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
@@ -94,15 +91,6 @@
               <item name="L3" type="b2602c69:ProjectViewProjectNode" />
               <item name="L3" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="L3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="L3" type="462c0819:PsiDirectoryNode" />
-              <item name="#Require" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="L3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -115,7 +103,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Data-Structure/Queue-SeqQueue" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -129,12 +117,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.L3">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="L3" RUN_TARGET_NAME="L3" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="L3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="L3" TARGET_NAME="L3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="L3" RUN_TARGET_NAME="L3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.L3" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -148,31 +145,36 @@
       <updated>1553164265378</updated>
       <workItem from="1553164267062" duration="1851000" />
       <workItem from="1553176700091" duration="23000" />
+      <workItem from="1553394196493" duration="619000" />
+      <workItem from="1553396386692" duration="579000" />
+      <workItem from="1553397137184" duration="675000" />
+      <workItem from="1553434545889" duration="4345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1874000" />
+    <option name="totallyTimeSpent" value="8092000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="58" y="-7" width="1486" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25248072" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25946704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32917964" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32885906" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32917964" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3261745" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.32841823" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -183,29 +185,72 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/#Require/chapter4.c">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#63#557#0" />
-          </folding>
+        <state>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/#Require/chapter4.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
+        <state relative-caret-position="57">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/#Require/chapter4.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="56" column="38" selection-start-line="36" selection-end-line="56" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SeqQueue.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="17" />
+          <folding>
+            <element signature="e#541#1336#0" />
+            <element signature="e#1338#1432#0" />
+            <element signature="e#1434#1546#0" />
+            <element signature="e#1548#1865#0" />
+            <element signature="e#1867#2125#0" />
+            <element signature="e#2128#2386#0" />
+            <element signature="e#2388#2622#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="80" column="52" lean-forward="true" selection-start-line="80" selection-start-column="52" selection-end-line="80" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#43#137#0" />
+            <element signature="e#198#352#0" />
+            <element signature="e#350#500#0" />
+            <element signature="e#501#650#0" />
+            <element signature="e#652#801#0" />
+            <element signature="e#813#868#0" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
